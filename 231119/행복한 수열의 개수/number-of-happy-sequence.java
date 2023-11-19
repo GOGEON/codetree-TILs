@@ -36,6 +36,7 @@ public class Main {
         // 입력
         n = sc.nextInt();
         m = sc.nextInt();
+        // 2차원 배열 입력 공백은 0으로 입력
         for (int row = 0; row < n; row++)
             for (int col = 0; col < n; col++)
                 grid[row][col] = sc.nextInt();
