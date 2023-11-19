@@ -37,10 +37,12 @@ public class Main {
         n = sc.nextInt();
         m = sc.nextInt();
         // 2차원 배열 입력 공백은 0으로 입력
-        for (int row = 0; row < n; row++)
-            for (int col = 0; col < n; col++)
-                grid[row][col] = sc.nextInt();
-
+         for (int row = 0; row < n; row++) {
+            String line = sc.next();
+            for (int col = 0; col < n; col++) {
+                grid[row][col] = line.charAt(col) - '0';
+            }
+        }
         for (int row = 0; row < n; row++) {
             if (isConsecutive(grid[row], m)) {
                 count++;
